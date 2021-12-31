@@ -6,7 +6,7 @@
 
 # cookies file
 *.cookie
-cookies-readcomiconline-li.txt
+cookies-*
 
 # MacOS Stuff
 .DS_Store
