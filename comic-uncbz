@@ -1,3 +1,4 @@
+#!/bin/bash
 # move all *.zip files into their own directory and unpack
 
 dir=$1

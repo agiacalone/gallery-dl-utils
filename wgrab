@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ## wgrab - a site downloader for wget
 
 URL=$1

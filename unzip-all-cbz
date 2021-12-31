@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 for cbz in *.cbz
 do
   dirname=`echo $cbz | sed 's/\.cbz$//'`
@@ -16,4 +17,3 @@ do
     echo "Could not unpack $cbz - mkdir failed"
   fi
 done
-

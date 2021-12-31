@@ -1,4 +1,5 @@
 #!/bin/bash
+
 for cbr in *.cbr
 do
   dirname=`echo $cbr | sed 's/\.cbr$//'`
@@ -16,4 +17,3 @@ do
     echo "Could not unpack $cbr - mkdir failed"
   fi
 done
-
