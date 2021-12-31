@@ -1,3 +1,13 @@
+# comic book files
+*.cbz
+*.cbr
+*.zip
+*.rar
+
+# cookies file
+*.cookie
+cookies-readcomiconline-li.txt
+
 # MacOS Stuff
 .DS_Store
 
