@@ -1,0 +1,16 @@
+#!/bin/sh
+for dir in *; do
+	if [ -d "$dir" ]; then
+		echo $dir
+		cd "$dir"/
+		unzip-all-cbz
+		unrar-all-cbr
+		rm *.cbz
+		rm *.cbr
+		rmdir "*"
+		cd ../
+		zip -r "$dir".cbz "$dir"/
+		rm -rf "$dir"/
+	fi 
+done
+

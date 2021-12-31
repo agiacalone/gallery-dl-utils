@@ -1,0 +1,7 @@
+# takes a folder with nested image files and creates a cbz comic archive
+
+dir=$1
+
+zip -r $dir'.cbz' $dir
+rm -rf $dir
+

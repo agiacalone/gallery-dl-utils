@@ -1,0 +1,9 @@
+# move all *.zip files into their own directory and unpack
+
+dir=$1
+
+mkdir $1
+unzip $1'.cbz' -d $1/
+rm    $1'.cbz'
+
+echo $1'.cbz'

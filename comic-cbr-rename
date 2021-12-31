@@ -1,0 +1,5 @@
+# Rename all *.zip to *.cbz
+for f in *.rar; do 
+    mv -- "$f" "${f%.rar}.cbr"
+done
+

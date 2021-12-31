@@ -1,0 +1,13 @@
+## Download comics by name from readcomiconline
+#!/bin/bash
+
+
+name=$1
+url='https://readcomiconline.li/Comic/'
+zip='--zip'
+dir='-d ./'
+cookies='--cookies /home/anthony/comics-local/cookies-readcomiconline-li.txt'
+sleep='--sleep 1'
+
+# run the command
+gallery-dl $sleep $cookies $dir $url$name

@@ -1,0 +1,9 @@
+# move all *.zip files into their own directory and unpack
+
+dir=$1
+
+mkdir $1
+unrar e $1'.cbr' -d $1/
+rm    $1'.cbr'
+
+echo $1'.cbr'

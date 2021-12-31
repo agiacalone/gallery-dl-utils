@@ -1,0 +1,19 @@
+#!/bin/bash
+for cbr in *.cbr
+do
+  dirname=`echo $cbr | sed 's/\.cbr$//'`
+  if mkdir "$dirname"
+  then
+    if cd "$dirname"
+    then
+      unrar e ../"$cbr" 
+      cd ..
+      rm -f $cbr # Uncomment to delete the original cbr file
+    else
+      echo "Could not unpack $cbr - cd failed"
+    fi
+  else
+    echo "Could not unpack $cbr - mkdir failed"
+  fi
+done
+

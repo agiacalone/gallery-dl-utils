@@ -1,0 +1,19 @@
+#!/bin/sh
+for cbz in *.cbz
+do
+  dirname=`echo $cbz | sed 's/\.cbz$//'`
+  if mkdir "$dirname"
+  then
+    if cd "$dirname"
+    then
+      unzip ../"$cbz"
+      cd ..
+		rm -f $cbz # Uncomment to delete the original cbz file
+    else
+      echo "Could not unpack $cbz - cd failed"
+    fi
+  else
+    echo "Could not unpack $cbz - mkdir failed"
+  fi
+done
+
