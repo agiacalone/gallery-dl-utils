@@ -2,9 +2,11 @@
 # move all *.zip files into their own directory and unpack
 
 dir=$1
-
+# create a new directory for the files
 mkdir $1
+# unzip the zip and stuff it into the new directory
 unzip $1'.cbz' -d $1/
+# delete the old zip file
 rm    $1'.cbz'
-
+# print out the file we just removed
 echo $1'.cbz'

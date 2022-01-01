@@ -2,9 +2,11 @@
 # move all *.zip files into their own directory and unpack
 
 dir=$1
-
+# create directory for the new unzipped comic
 mkdir $1
+# unzip all zip files in the current directory and put in individual directories
 unzip $1'.zip' -d $1/
+# delete the original zip files
 rm    $1'.zip'
-
+# print out what files were processed
 echo $1'.zip'

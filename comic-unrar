@@ -1,10 +1,12 @@
 #!/bin/bash
-# move all *.zip files into their own directory and unpack
+# move all *.cbr files into their own directory and unpack
 
 dir=$1
-
+# create a new directory for the files
 mkdir $1
+# unrar the cbr and stuff it into the new directory
 unrar e $1'.cbr' -d $1/
+# delete the old cbr file
 rm    $1'.cbr'
-
+# print out the file we just removed
 echo $1'.cbr'
