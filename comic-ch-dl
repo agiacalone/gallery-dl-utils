@@ -7,7 +7,7 @@ url='https://readcomiconline.li/Comic/'
 zip='--zip'
 dir='-d ./'
 # Change the cookies to a relative link?
-cookies='--cookies /home/anthony/comics-local/cookies-readcomiconline-li.txt'
+cookies='--cookies /mnt/es3/media/comiclib/cookies-readcomiconline-li.txt'
 sleep='--sleep 1'
 chapter='--chapter-range '$1'-'$2
 

@@ -1,0 +1,13 @@
+#!/bin/bash
+## Download comics by name from readcomiconline
+
+name=$1
+url='https://readcomicsonline.ru/comic/'
+zip='--zip'
+dir='-d ./'
+# change cookies to relative link
+#cookies='--cookies /mnt/es3/media/comiclib/cookies-readcomiconline-li.txt'  # the cookies file is needed to avoid spidering detection - export one from a standard web browser
+sleep='--sleep 1'  # add a delay to avoid flood detection 
+
+# run the command
+gallery-dl $sleep $dir $url$name
