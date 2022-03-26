@@ -9,6 +9,8 @@ do
     then
       unrar e ../"$cbr" 
       rm zSoU-Nerd.jpg
+	  rm zWater.jpg
+	  rm ZZZZZ.jpg
 	  cd ..
       rm -f $cbr # Uncomment to delete the original cbr file
     else
