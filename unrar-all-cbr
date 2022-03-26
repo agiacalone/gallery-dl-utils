@@ -8,7 +8,8 @@ do
     if cd "$dirname"
     then
       unrar e ../"$cbr" 
-      cd ..
+      rm zSoU-Nerd.jpg
+	  cd ..
       rm -f $cbr # Uncomment to delete the original cbr file
     else
       echo "Could not unpack $cbr - cd failed"
