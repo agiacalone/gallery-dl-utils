@@ -13,6 +13,7 @@ do
 	  rm ZZZZZ.jpg
 	  rm zzzzz.jpg
 	  rm zzzg7.jpg
+	  rm zzoronewtag10.jpg
 	  cd ..
       rm -f $cbr # Uncomment to delete the original cbr file
     else
